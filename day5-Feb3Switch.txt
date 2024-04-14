@@ -420,6 +420,7 @@ int e0/3
  swi mode trunk
 
 D1 = root primary
+config t
 spanning-tree mode rapid-pvst
 spanning-tree vlan 1-200 root primary
 d2 = root secondary
@@ -427,9 +428,9 @@ config t
 spanning-tree mode rapid-pvst
 spanning-tree vlan 1-200 root secondary
 a1/a2:
-config
+config t
 spanning-tree mode rapid-pvst
-spanning-tree vlan 1-200 root priority 61440
+spanning-tree vlan 1-200 priority 61440
 
 
 homelab: VTP:
